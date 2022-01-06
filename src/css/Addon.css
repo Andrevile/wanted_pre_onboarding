@@ -1,0 +1,50 @@
+.NavBar-Maincontainer .NavBar-Subcontainer aside {
+  height: 100%;
+  padding: 10px 0;
+  display: block;
+  position: relative;
+}
+
+.NavBar-Maincontainer .NavBar-Subcontainer aside > ul {
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+#searchButton {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  top: 2px;
+  padding: 10px;
+}
+
+#signUpButton {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 10px;
+}
+.NavBar-Maincontainer .NavBar-Subcontainer aside > ul .leftDivision {
+  display: inline-flex;
+}
+
+.NavBar-Maincontainer .NavBar-Subcontainer aside > ul .leftDivision::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #e1e2e3;
+  margin: auto 10px;
+}
+
+#dashboardButton {
+  font-size: 13px;
+  color: #666;
+  height: 30px;
+  line-height: 0px;
+  border: 1px solid #e1e2e3;
+  border-radius: 15px;
+  margin-left: 15px;
+  font-weight: 400;
+}
