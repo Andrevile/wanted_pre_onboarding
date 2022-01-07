@@ -1,36 +1,46 @@
-.NavBar-Maincontainer .NavBar-Subcontainer aside {
+.Navbar-aside {
   height: 100%;
   padding: 10px 0;
-  display: block;
-  position: relative;
 }
 
-.NavBar-Maincontainer .NavBar-Subcontainer aside > ul {
+.Navbar-aside > ul {
   height: 100%;
   margin: 0;
-  position: relative;
-}
-#searchButton {
-  background-color: transparent;
-  border: none;
-  position: relative;
-  top: 2px;
-  padding: 10px;
 }
 
-#signUpButton {
-  background-color: transparent;
-  border: none;
+.Navbar-aside > ul li {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.Navbar-aside > ul li a {
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 32px;
+}
+.Navbar-aside > ul li > * {
+  height: 100%;
+  padding: 0 5px;
   font-size: 14px;
+  color: #333;
   font-weight: 600;
   line-height: 1;
-  padding: 10px;
-}
-.NavBar-Maincontainer .NavBar-Subcontainer aside > ul .leftDivision {
-  display: inline-flex;
 }
 
-.NavBar-Maincontainer .NavBar-Subcontainer aside > ul .leftDivision::before {
+.Navbar-aside > ul li .searchButton {
+  position: relative;
+  margin-top: 5px;
+}
+.Navbar-aside > ul li .signUpButton {
+  margin-right: 10px;
+}
+
+.Navbar-aside > ul .leftDivision {
+  display: inline-flex;
+}
+.Navbar-aside > ul .leftDivision::before {
+  display: block;
   content: "";
   width: 1px;
   height: 10px;
@@ -38,13 +48,78 @@
   margin: auto 10px;
 }
 
-#dashboardButton {
+.Navbar-aside > ul li .dashboardButton {
   font-size: 13px;
   color: #666;
+  line-height: 30px;
   height: 30px;
-  line-height: 0px;
   border: 1px solid #e1e2e3;
   border-radius: 15px;
-  margin-left: 15px;
+  padding: 0 10px;
+  margin-left: 10px;
   font-weight: 400;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .Navbar-aside {
+    padding: 14px 14px;
+    /* margin-right: 5px; */
+  }
+  .Navbar-aside > ul {
+    margin-top: -5px;
+  }
+  .Navbar-aside > ul li .searchButton {
+    margin: 0;
+  }
+  .Navbar-aside > ul li .signUpButton {
+    display: none;
+  }
+  .Navbar-aside > ul .mdMoreVisible {
+    display: none;
+  }
+  .Navbar-aside > ul li .dashboardButton {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Navbar-aside > ul li .searchButton {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Navbar-aside > ul li > * {
+    padding: 0 10px;
+  }
+  .asideVisibleMenu {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Navbar-aside > ul li .signUpButton {
+    margin-right: 0;
+    padding: 0 3px;
+  }
+  .dashboardButton {
+    margin: 0;
+  }
+  .asideVisibleMenu {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Navbar-aside > ul li .signUpButton {
+    display: none;
+  }
+  .Navbar-aside > ul .mdMoreVisible {
+    display: none;
+  }
+  .Navbar-aside > ul li .dashboardButton {
+    margin: 0;
+  }
 }

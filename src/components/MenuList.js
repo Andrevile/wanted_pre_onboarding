@@ -1,20 +1,26 @@
 const MenuList = () => {
   return (
     <>
-      <ul>
+      <ul className="menu-container">
+        <li
+          className="home-minW1200"
+          style={{ borderBottom: "2px solid #258bf7" }}
+        >
+          <a href="#">홈</a>
+        </li>
         <li>
           <a href="#">채용</a>
         </li>
         <li>
           <a href="#">이벤트</a>
         </li>
-        <li>
+        <li className="small-visible">
           <a href="#">직군별 연봉</a>
         </li>
-        <li>
+        <li className="small-visible">
           <a href="#">이력서</a>
         </li>
-        <li>
+        <li className="small-visible">
           <a href="#">
             커뮤니티
             <em>
@@ -45,10 +51,10 @@ const MenuList = () => {
             </em>
           </a>
         </li>
-        <li>
+        <li className="small-visible">
           <a href="#">프리랜서</a>
         </li>
-        <li>
+        <li className="small-visible">
           <a href="#">
             AI 합격예측
             <em>

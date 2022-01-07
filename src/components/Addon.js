@@ -4,7 +4,7 @@ const Addon = () => {
       <aside className="Navbar-aside">
         <ul>
           <li>
-            <button id="searchButton" type="button">
+            <button className="searchButton" type="button">
               <svg
                 xmlns="https://www.w3.org/2000/svg"
                 xlink="https://www.w3.org/1999/xlink"
@@ -30,9 +30,9 @@ const Addon = () => {
               </svg>
             </button>
           </li>
-          <li>
+          <li style={{ marginRight: "10px" }}>
             <button
-              id="signUpButton"
+              className="signUpButton"
               type="button"
               data-attribute-id="gnb"
               data-gnb-kind="signupLogin"
@@ -40,12 +40,35 @@ const Addon = () => {
               회원가입/로그인
             </button>
           </li>
-          <li className={("mdMoreVisible", "leftDivision")}>
-            <a id="dashboardButton" href="/#">
+          <li className="mdMoreVisible leftDivision">
+            <a className="dashboardButton" href="/#">
               기업 서비스
             </a>
           </li>
+          <li className="asideVisibleMenu">
+            <button className="menuBtn">
+              <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <path
+                    d="M9 7.5a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 9 7.5zm5.05 0a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 14.05 7.5zM4 7.5a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 4 7.5z"
+                    id="a"
+                  ></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <mask id="b" fill="#fff">
+                    <use href="#a"></use>
+                  </mask>
+                  <use fill="#333" href="#a"></use>
+                  <g mask="url(#b)" fill="#333">
+                    <path d="M0 0h18v18H0z"></path>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </li>
+          <div className="asideVisibleMenu"></div>
         </ul>
+        <div className="asideVisibleMenu"></div>
       </aside>
     </>
   );

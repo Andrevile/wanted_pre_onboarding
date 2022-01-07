@@ -1,22 +1,96 @@
-.NavBar-Maincontainer .NavBar-Subcontainer ul {
+.menu-container {
   height: inherit;
-  list-style: none;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.NavBar-Maincontainer .NavBar-Subcontainer li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 15px;
-  line-height: 200;
-  position: relative;
+  margin: 0;
 }
 
-.NavBar-Maincontainer .NavBar-Subcontainer li a > em {
+.menu-container li {
+  height: inherit;
+  display: inline-block;
+}
+.menu-container li.home-minW1200 a {
+  padding-left: 20px;
+}
+.menu-container li a {
   position: relative;
-  top: -5px;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+}
+.menu-container li a::after {
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu-container li a > em {
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  pointer-events: none;
+  font-style: normal;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .menu-container {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;
+  }
+  .NavBar-Maincontainer .NavBar-Subcontainer .menu-container .home-minW1200 {
+    display: none;
+  }
+  .menu-container li a {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+  .menu-container li a > em {
+    right: -20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-container {
+    justify-content: flex-start;
+    margin-right: 30px;
+  }
+  .NavBar-Maincontainer .NavBar-Subcontainer .menu-container .home-minW1200 {
+    display: none;
+  }
+  .menu-container li a {
+    padding: 11px 10px 19px;
+    font-size: 13px;
+  }
+  .menu-container li a > em {
+    top: 5px;
+    right: -7px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-container {
+    text-align: left;
+  }
+  .menu-container li a {
+    padding: 11px 10px 19px;
+  }
+  .menu-container .small-visible {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .NavBar-Maincontainer .NavBar-Subcontainer .menu-container .home-minW1200 {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .NavBar-Maincontainer .NavBar-Subcontainer .menu-container .home-minW1200 {
+    display: none;
+  }
 }
