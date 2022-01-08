@@ -22,6 +22,7 @@ const CardInfo = ({ info_top, info_bottom, showing }) => {
       >
         {info_bottom}
       </h3>
+      <div style={{position:"absloute",width: "329px" ,height: "4px", borderTop: "1px solid #e1e2e3"}}></div>
       <span
         style={{
           display: "block",

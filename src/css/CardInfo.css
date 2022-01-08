@@ -5,3 +5,57 @@
   width: inherit;
   text-align: center;
 }
+
+
+@media (min-width:1200px) {
+  .Info-container{
+    position: absolute;
+    bottom: 28px;
+    width: 330px;
+    height: 146px;
+    border-radius: 4px;
+    background-color: #fff;
+    /* opacity: 0; */
+    text-align: left;
+    left:34px;
+    animation: showing 0.5s ease;
+    animation-fill-mode: forwards;
+    
+  }
+  .Info-container > *{
+    text-align: left;
+  }
+  .Info-container > h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    
+  }
+  .Info-container > h3{
+    margin: 0 20px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 1.64;
+    color: #333;
+    
+  }
+  .Info-container >span{
+  
+    height: 10px;
+  
+    margin: 6px 0 0 13px;
+  };
+
+ 
+  
+}
+@keframe showing{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
