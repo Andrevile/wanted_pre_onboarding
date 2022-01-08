@@ -1,6 +1,7 @@
 @import url(./css/Addon.css);
 @import url(./css/MenuList.css);
 @import url(./css/WantedTitle.css);
+@import url(./css/Slide.css);
 * {
   box-sizing: border-box;
 }

@@ -1,14 +1,15 @@
 import WantedTitle from "./WantedTitle";
 import MenuList from "./MenuList";
 import Addon from "./Addon";
+
 const NavBar = () => {
   return (
     <div
       style={{
         paddingRight: "initial",
-        position: "fixed",
+        // position: "fixed",
         borderBottom: "1px solid #e3e3e3",
-        zIndex: "100",
+        // zIndex: "100",
         width: "100%",
       }}
     >
