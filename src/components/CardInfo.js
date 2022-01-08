@@ -1,6 +1,6 @@
-const CardInfo = ({ info_top, info_bottom }) => {
+const CardInfo = ({ info_top, info_bottom, showing }) => {
   return (
-    <div className="Info-container">
+    <div className="Info-container" style={{ display: showing }}>
       <h2
         style={{
           fontSize: "18px",
