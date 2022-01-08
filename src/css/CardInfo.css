@@ -20,7 +20,7 @@
     left:34px;
     animation: showing 0.5s ease;
     animation-fill-mode: forwards;
-    
+  
   }
   .Info-container > *{
     text-align: left;
@@ -46,7 +46,13 @@
     height: 10px;
   
     margin: 6px 0 0 13px;
-  };
+  }
+  .infoborder{
+    position: absolute;
+    width: 329px;
+    height: 4px;
+    border-top: 1px solid #e1e2e3;
+  }
 
  
   

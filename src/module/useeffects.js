@@ -8,7 +8,7 @@ export const translateSlide = (data, slideRef, currentBanner) => {
     slideRef.current.style.transform = `translateX(-${
       (totalWidth / data.length) * currentBanner -
       (window.innerWidth - 1060) / 2 +
-      50
+      60
     }px)`;
   } else {
     totalWidth = (window.innerWidth - 76) * data.length;

@@ -45,7 +45,7 @@ const Slide = () => {
           slideRef.current.style.transform = `translateX(-${
             (totalWidth / bannerList.length) * currentPosition.current -
             (window.innerWidth - 1060) / 2 +
-            50
+            60
           }px)`;
         } else {
           PostWidth(size);
