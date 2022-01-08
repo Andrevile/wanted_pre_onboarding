@@ -2,6 +2,7 @@
 @import url(./css/MenuList.css);
 @import url(./css/WantedTitle.css);
 @import url(./css/Slide.css);
+@import url(./css/CardInfo.css);
 * {
   box-sizing: border-box;
 }

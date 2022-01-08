@@ -1,0 +1,7 @@
+.Info-container {
+}
+.Info-container > * {
+  font-family: sans-serif;
+  width: inherit;
+  text-align: center;
+}

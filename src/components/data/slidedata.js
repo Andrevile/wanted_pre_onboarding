@@ -62,21 +62,27 @@ export const data = [
     info_bottom: "요즘 데이터팀은 어떻게 일할까?",
   },
   {
-    id: 11,
+    id: 10,
     src: "https://static.wanted.co.kr/images/banners/1452/be4ec643.jpg",
     info_top: "Git? Github?",
     info_bottom: "협업 필수 도구 마스터하기",
   },
   {
-    id: 12,
+    id: 11,
     src: "https://static.wanted.co.kr/images/banners/1436/e2dd9445.jpg",
     info_top: "마케터를 위한 데이터",
     info_bottom: "잘 나가는 마케터는 무엇이 다를까!?",
   },
   {
-    id: 13,
+    id: 12,
     src: "https://static.wanted.co.kr/images/banners/1473/41f7b36e.jpg",
     info_top: "나도 개발자 되고 싶다",
     info_bottom: "프론트엔드 무료 교육과정 참여하기",
+  },
+  {
+    id: 13,
+    src: "https://static.wanted.co.kr/images/banners/1435/6cdcea85.jpg",
+    info_top: "유저 경험을 설계하라!",
+    info_bottom: "문제를 해결하는 프로덕트 디자인",
   },
 ];
