@@ -160,7 +160,7 @@ const Slide = () => {
               <CardInfo
                 info_top={banner.info_top}
                 info_bottom={banner.info_bottom}
-                showing={currentBanner === banner.id ? "block" : "none"}
+                showing={currentBanner === banner.id ? "1" : "0"}
               ></CardInfo>
             </ImgContainer>
           );

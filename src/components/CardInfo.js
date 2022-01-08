@@ -1,6 +1,6 @@
 const CardInfo = ({ info_top, info_bottom, showing }) => {
   return (
-    <div className="Info-container" style={{ display: showing }}>
+    <div className="Info-container" style={{ opacity: showing }}>
       <h2
         style={{
           fontSize: "18px",
@@ -31,7 +31,7 @@ const CardInfo = ({ info_top, info_bottom, showing }) => {
           lineHeight: "1",
           color: "#36f",
           padding: "6px 8px",
-          marginTop: "5px",
+          marginTop: "15px",
         }}
       >
         바로가기 >
