@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { data } from "./data/slidedata";
 import styled from "styled-components";
 import { translateSlide } from "../module/useeffects";
+import { leftSlide, rightSlide } from "../module/btnEvent";
 import CardInfo from "./CardInfo";
 const ImgContainer = styled.div`
   padding: 0 12px;
@@ -22,6 +23,8 @@ const Slide = () => {
   const [currentBanner, postBanner] = useState(1);
   const [windowWidth, PostWidth] = useState(1060);
   const [finish, BacktoStart] = useState(true);
+  const leftBtn = useRef(null);
+  const rightBtn = useRef(null);
   const slideRef = useRef(null);
   const imgContainer = useRef(null);
   const imgWidth = useRef(null);
@@ -61,7 +64,7 @@ const Slide = () => {
       let tempT;
       globalT.current = setInterval(() => {
         if (currentPosition.current === 11) {
-          postBanner(currentBanner.current + 1);
+          postBanner(currentPosition.current + 1);
           translateSlide(bannerList, slideRef, currentPosition.current + 1);
           currentPosition.current = currentPosition.current + 1;
           slideRef.current.style.transition = `all 0.5s ease`;
@@ -122,49 +125,67 @@ const Slide = () => {
   }, [currentBanner]);
 
   return (
-    <div
-      className="Slide-container"
-      style={
-        window.innerWidth >= 1200
-          ? { padding: "0 50px" }
-          : { padding: "0 40px" }
-      }
-    >
+    <div className="Main-container">
+      <button
+        className="gotoLeft"
+        ref={leftBtn}
+        onClick={() => {
+          console.log("leftBtn");
+          //   leftSlide(data, globalT, currentPosition, slideRef, postBanner);
+        }}
+      ></button>
+      <button
+        className="gotoRight"
+        ref={rightBtn}
+        onClick={() => {
+          console.log("rightBtn");
+          //   rightSlide(data, globalT, currentPosition, slideRef, postBanner);
+        }}
+      ></button>
       <div
-        className="Slide-list"
-        ref={slideRef}
-        style={{ width: 1084 * bannerList.length + "px" }}
+        className="Slide-container"
+        style={
+          window.innerWidth >= 1200
+            ? { padding: "0 50px" }
+            : { padding: "0 40px" }
+        }
       >
-        {bannerList.map((banner, idx) => {
-          return (
-            <ImgContainer
-              ref={imgContainer}
-              key={idx}
-              width={
-                window.innerWidth >= 1200
-                  ? "1060px"
-                  : window.innerWidth - 100 + "px"
-              }
-            >
-              <Img
-                ref={imgWidth}
-                src={banner.src}
-                alt={banner.info_top}
+        <div
+          className="Slide-list"
+          ref={slideRef}
+          style={{ width: 1084 * bannerList.length + "px" }}
+        >
+          {bannerList.map((banner, idx) => {
+            return (
+              <ImgContainer
+                ref={imgContainer}
+                key={idx}
                 width={
                   window.innerWidth >= 1200
                     ? "1060px"
                     : window.innerWidth - 100 + "px"
                 }
-                filter={currentBanner !== banner.id ? "20" : "100"}
-              ></Img>
-              <CardInfo
-                info_top={banner.info_top}
-                info_bottom={banner.info_bottom}
-                showing={currentBanner === banner.id ? "1" : "0"}
-              ></CardInfo>
-            </ImgContainer>
-          );
-        })}
+              >
+                <Img
+                  ref={imgWidth}
+                  src={banner.src}
+                  alt={banner.info_top}
+                  width={
+                    window.innerWidth >= 1200
+                      ? "1060px"
+                      : window.innerWidth - 100 + "px"
+                  }
+                  filter={currentBanner !== banner.id ? "20" : "100"}
+                ></Img>
+                <CardInfo
+                  info_top={banner.info_top}
+                  info_bottom={banner.info_bottom}
+                  showing={currentBanner === banner.id ? "1" : "0"}
+                ></CardInfo>
+              </ImgContainer>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
