@@ -1,11 +1,16 @@
 <h1 align= "center">원티드 프리온보딩 사전과제</h1>
 
-
+~~~
+- 무한 슬라이드 캐러셀, 좌우 이동 버튼 구현
+- 반응형 웹 구현
+~~~
 ### :black_nib: PC
 
 ![pc](https://user-images.githubusercontent.com/65812122/148677679-05f5d7ba-5bc1-4cd4-96ba-709bf99a7671.gif)
 
 ![S-PC](https://user-images.githubusercontent.com/65812122/148677723-2e84fa32-1b6c-48bb-ad58-55a642969842.gif)
+
+
 
 ### :black_nib: Tablet
 ![tablet](https://user-images.githubusercontent.com/65812122/148677728-722dd931-95a6-48e5-a851-5b68b5a4e53b.gif)
