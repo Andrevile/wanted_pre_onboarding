@@ -46,11 +46,12 @@
     font-size: 16px;
   }
   .gotoRight {
-    right: calc((100%-1200px) / 2 - 620px);
+    /* right: calc((100%-1200px) / 2 - 620px); */
+    right: calc((100% - 1200px) / 2 - 50px);
     margin-right: 10px;
   }
   .gotoLeft {
-    left: calc((100%-1200px) / 2 + -600px);
+    left: calc((100% - 1200px) / 2 + -35px);
     margin-left: 15px;
   }
   .SvgIcon_SvgIcon__root__8vwon {
