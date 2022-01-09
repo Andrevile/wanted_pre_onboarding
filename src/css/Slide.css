@@ -30,17 +30,30 @@
   /* right: 929px; */
 }
 
-/* @media (min-width: 1200px) { */
-.Main-container > button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 120px;
-  width: 30px;
-  height: 60px;
-  opacity: 0.5;
-  border-radius: 15px;
-  background-color: #fff;
-  font-size: 16px;
+@media (min-width: 1200px) {
+  .Main-container > button {
+    z-index: 1;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 140px;
+    width: 30px;
+    height: 60px;
+    opacity: 0.5;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 16px;
+  }
+  .gotoRight {
+    right: calc((100%-1200px) / 2 - 620px);
+    margin-right: 10px;
+  }
+  .gotoLeft {
+    left: calc((100%-1200px) / 2 + -600px);
+    margin-left: 15px;
+  }
+  .SvgIcon_SvgIcon__root__8vwon {
+    width: 100%;
+  }
 }

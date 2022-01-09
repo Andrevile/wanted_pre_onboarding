@@ -10,6 +10,11 @@ export const translateSlide = (data, slideRef, currentBanner) => {
     }px)`;
   } else {
     totalWidth = (window.innerWidth - 76) * data.length;
+    console.log(
+      (totalWidth / data.length) * currentBanner -
+        (window.innerWidth - 1060) / 2 +
+        50
+    );
     slideRef.current.style.transform = `translateX(-${
       (totalWidth / data.length) * currentBanner + 2
     }px)`;
