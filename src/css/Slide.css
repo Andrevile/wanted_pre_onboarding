@@ -19,15 +19,8 @@
   /* position: relative; */
 }
 .Slide-list {
-  /* overflow: hidden; */
-  /* overflow: scroll; */
   position: relative;
   display: flex;
-  /* position: relative;
-  left: 0;
-  top: 0;
-  display: block; */
-  /* right: 929px; */
 }
 
 @media (min-width: 1200px) {
