@@ -65,7 +65,7 @@ const Slide = () => {
           }px)`;
         }
         slideRef.current.style.transition = "none";
-      }, 200);
+      }, 100);
       let tempT;
       globalT.current = setInterval(() => {
         if (currentPosition.current === 12) {
