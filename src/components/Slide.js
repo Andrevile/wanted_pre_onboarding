@@ -9,6 +9,9 @@ const ImgContainer = styled.div`
   box-sizing: content-box;
   width: ${(props) => props.width};
   position: relative;
+  @media (max-width: 767px) {
+    height: 200px;
+  }
 `;
 
 const Img = styled.img`
@@ -17,6 +20,9 @@ const Img = styled.img`
   object-fit: cover;
   width: ${(props) => props.width};
   filter: brightness(${(props) => props.filter}%);
+  @media (max-width: 767px) {
+    height: 200px;
+  }
 `;
 const Slide = () => {
   const [bannerList, NewbannerList] = useState(data);
