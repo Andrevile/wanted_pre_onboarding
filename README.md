@@ -1,3 +1,8 @@
+
+
+
+
+
 <h1 align= "center">원티드 프리온보딩 사전과제</h1>
 
 ~~~
@@ -11,13 +16,11 @@
 
 ![S-PC](https://user-images.githubusercontent.com/65812122/148677723-2e84fa32-1b6c-48bb-ad58-55a642969842.gif)
 
-
-
 ### :black_nib: Tablet
 ![tablet](https://user-images.githubusercontent.com/65812122/148677728-722dd931-95a6-48e5-a851-5b68b5a4e53b.gif)
 
 ### :black_nib: Mobile
-![mobile](https://user-images.githubusercontent.com/65812122/148677730-760c3e43-df4a-4f90-a0f6-04b2c640beae.gif)
+![mobile](https://user-images.githubusercontent.com/65812122/149244134-2c0390af-3c32-49a6-b31a-566793bac9ca.gif)
 
 
 ### :exclamation: demo
